@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Contextual: Music that suits the time and mood</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>The Current Time is:  </h1>
+        <p id="time"></p>
+        
+        <script>
+                var now = new Date();
+                var time = now.getHours() + ":" + now.getMinutes();
+                var timeHours = now.getHours();
+                document.getElementById("time").innerHTML = time;
+
+                // If time is 9
+                // Go to Youtube playlist
+                // Pick a random song
+
+                if (timeHours == 22) {
+                    document.write("<iframe width='560' height='315' src='https://www.youtube.com/embed/epOf2RLqLdw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+                }
+
+                if (timeHours == 23) {
+                    document.write("<iframe width='560' height='315' src='https://www.youtube.com/embed/7lERcfsqJSk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+
+                }   
+        </script>
+    </body>
+</html>
